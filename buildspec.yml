@@ -3,6 +3,9 @@ version: 0.2
 phases:
   install:
     commands:
+	- sudo yum install epel-release
+	- sudo yum install python-pip
+	- pip --version
         - python -m pip install Flask
   build:
     commands:
