@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - sudo amazon-linux-extras install epel -y
+        - amazon-linux-extras install epel -y
         - yum install python-pip -y
         - pip --version
         - python -m pip install Flask
